@@ -84,6 +84,9 @@
                 <td>{{$Post->name}}</td>
                 <td>{{$Post->description}}</td>
                 <td>{{$Post->Category->name}}</td>
+                <td>
+                    <a href="{{url('edit/'.$Post -> id)}}" class="btn btn-success">Edit</a>
+                </td>
 
             </tr>
         @endforeach

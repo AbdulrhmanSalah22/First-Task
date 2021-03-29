@@ -23,3 +23,10 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('show','PostController@Show');
+
+Route::get('create','PostController@Create');
+Route::post('store','PostController@Store') ->name('Store');
+
+Route::get('edit/{id}','PostController@Edit');
+Route::post('update/{id}','PostController@Update') ->name('Update');
+
